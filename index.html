@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOSAI KEY</title>
+  <meta name="description" content="SOSAI KEY — a calm, coordinated emergency safety concept.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">SOSAI <span>KEY</span></a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
+    </nav>
+    <a class="nav-sos" href="#demo">TRY SOS</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">SMART EMERGENCY SAFETY DEVICE</div>
+        <h1>One voice can<br><span>save a life.</span></h1>
+        <p>SOSAI KEY combines AI-assisted detection, multiple sensors and location data to help identify emergencies and coordinate a faster response.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#demo">Explore SOSAI KEY</a>
+          <a class="secondary" href="#how">See how it works</a>
+        </div>
+      </div>
+      <div class="hero-model">
+        <div class="glow"></div>
+        <div id="model-viewer" aria-label="Interactive 3D SOSAI KEY model"></div>
+        <div class="model-hint">↔ Drag to rotate · Pinch / wheel to zoom</div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-label">01 — HOW IT WORKS</div>
+      <h2>From distress signal<br>to <span>verified alert.</span></h2>
+      <div class="steps">
+        <article><b>01</b><h3>Detect</h3><p>Voice, sound, temperature and other sensor data are collected when an emergency signal is detected.</p></article>
+        <article><b>02</b><h3>Verify</h3><p>AI-assisted logic compares multiple signals and provides a short confirmation window to reduce false alarms.</p></article>
+        <article><b>03</b><h3>Locate</h3><p>Location information is prepared with the emergency event so responders can identify where help is needed.</p></article>
+        <article><b>04</b><h3>Alert</h3><p>The prototype demonstrates an emergency alert flow for verification and escalation to the appropriate agency.</p></article>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="section-label">02 — FEATURES</div>
+      <h2>More than an SOS button.</h2>
+      <div class="feature-grid">
+        <article><div class="icon">AI</div><h3>AI-Assisted Detection</h3><p>Analyses distress-related signals and combines evidence instead of relying on one input.</p></article>
+        <article><div class="icon">⌖</div><h3>Location Detection</h3><p>Provides a location layer for the emergency event in the prototype dashboard.</p></article>
+        <article><div class="icon">°</div><h3>Temperature Sensor</h3><p>Helps identify unusual environmental conditions such as a rapidly rising temperature.</p></article>
+        <article><div class="icon">◉</div><h3>Sound Detection</h3><p>Recognises a simulated distress-sound event as another signal for verification.</p></article>
+        <article><div class="icon">↯</div><h3>Fast Response</h3><p>The concept is designed to collect and compare emergency data within seconds.</p></article>
+        <article><div class="icon">⌁</div><h3>Long-Lasting Design</h3><p>Designed as a compact wearable/keychain-style emergency device concept.</p></article>
+      </div>
+    </section>
+
+    <section class="demo section" id="demo">
+      <div class="section-label">03 — INTERACTIVE PROTOTYPE</div>
+      <div class="demo-grid">
+        <div>
+          <h2>Test the<br><span>SOSAI KEY.</span></h2>
+          <p>Press the button to run a safe simulation of the emergency detection and verification flow. No real emergency call is made.</p>
+          <button id="sosButton" class="sos-button">ACTIVATE SOS</button>
+          <p class="small-note">Prototype simulation only · No real emergency service is contacted.</p>
+        </div>
+        <div class="dashboard">
+          <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">SYSTEM READY</span></div>
+          <div class="readings">
+            <div><small>VOICE</small><strong id="voice">Normal</strong></div>
+            <div><small>SOUND</small><strong id="sound">Normal</strong></div>
+            <div><small>TEMP</small><strong id="temp">29°C</strong></div>
+            <div><small>LOCATION</small><strong id="location">Ready</strong></div>
+          </div>
+          <div class="log" id="log">Waiting for a demonstration…</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© SOSAI KEY · SMART EMERGENCY SAFETY CONCEPT</footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
