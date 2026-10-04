@@ -39,7 +39,7 @@ scene.add(fill);
 const loader = new GLTFLoader();
 
 loader.load(
-  "./assets/sosai-key.glb",
+  "./sosai-key.glb",
   (gltf) => {
     const model = gltf.scene;
 
